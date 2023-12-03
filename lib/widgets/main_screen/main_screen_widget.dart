@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../movie_list/movie_list_widget.dart';
 
 class MainScreenWidget extends StatefulWidget {
@@ -42,6 +43,7 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
         centerTitle: true,
         title: const Text('TMDB'),
         titleTextStyle: const TextStyle(

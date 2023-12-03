@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lessons_lesson_39/images.dart';
 
-
 class Movie {
-  final dynamic imageName;
+  final String imageName;
   final String title;
   final String time;
   final String description;
@@ -19,11 +18,12 @@ class Movie {
 class MovieListWidget extends StatelessWidget {
   final _movies = [
     Movie(
-      imageName: AppImages.gameOfThrones,
+      imageName: AppImages.gameOfThrones.assetName,
       title: 'Game Of Thrones',
       time: 'April 18, 2011',
       description:
-          'Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO',
+          'Game of Thrones is an American fantasy drama television series '
+          'created by David Benioff and D. B. Weiss for HBO',
     ),
   ];
 
@@ -60,11 +60,11 @@ class MovieListWidget extends StatelessWidget {
                 clipBehavior: Clip.hardEdge,
                 child: Row(
                   children: [
-                    Image(
-                      image: AssetImage(movieOne.imageName),
-                      // width: 100,
-                      // height: 160,
-                      // fit: BoxFit.fill,
+                    Image.asset(
+                      movieOne.imageName,
+                      width: 100,
+                      height: 160,
+                      fit: BoxFit.fill,
                     ),
                     const SizedBox(
                       width: 8,
