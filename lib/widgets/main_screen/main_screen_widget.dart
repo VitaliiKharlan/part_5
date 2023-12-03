@@ -12,26 +12,6 @@ class MainScreenWidget extends StatefulWidget {
 class _MainScreenWidgetState extends State<MainScreenWidget> {
   int _selectedTab = 0;
 
-  static final List<Widget> _widgetOptions = <Widget>[
-    const Text(
-      'News',
-      style: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-        color: Colors.green,
-      ),
-    ),
-    MovieListWidget(),
-    const Text(
-      'Series',
-      style: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-        color: Colors.green,
-      ),
-    ),
-  ];
-
   void onSelectTab(int index) {
     if (_selectedTab == index) return;
     setState(() {
@@ -51,8 +31,27 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
           fontSize: 20,
         ),
       ),
-      body: Center(
-        child: _widgetOptions[_selectedTab],
+      body: IndexedStack(
+        index: _selectedTab,
+        children: const [
+          Text(
+            'News',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.green,
+            ),
+          ),
+          MovieListWidget(),
+          Text(
+            'Series',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.green,
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.lightBlueAccent,
