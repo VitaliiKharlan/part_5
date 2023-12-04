@@ -35,31 +35,31 @@ class _MovieListWidgetState extends State<MovieListWidget> {
     ),
     Movie(
       imageName: AppImages.gameOfThrones.assetName,
-      title: 'Game Of Thrones - 2',
-      time: 'April 18, 2011',
-      description:
-          'Game of Thrones is an American fantasy drama television series '
-          'created by David Benioff and D. B. Weiss for HBO',
-    ),
-    Movie(
-      imageName: AppImages.gameOfThrones.assetName,
-      title: 'Game Of Thrones - 3',
-      time: 'April 18, 2011',
-      description:
-          'Game of Thrones is an American fantasy drama television series '
-          'created by David Benioff and D. B. Weiss for HBO',
-    ),
-    Movie(
-      imageName: AppImages.gameOfThrones.assetName,
-      title: 'Game Of Thrones - 4',
-      time: 'April 18, 2011',
-      description:
-          'Game of Thrones is an American fantasy drama television series '
-          'created by David Benioff and D. B. Weiss for HBO',
-    ),
-    Movie(
-      imageName: AppImages.gameOfThrones.assetName,
       title: 'Band Of Brothers',
+      time: 'April 18, 2011',
+      description:
+          'Game of Thrones is an American fantasy drama television series '
+          'created by David Benioff and D. B. Weiss for HBO',
+    ),
+    Movie(
+      imageName: AppImages.gameOfThrones.assetName,
+      title: 'The Godfather',
+      time: 'April 18, 2011',
+      description:
+          'Game of Thrones is an American fantasy drama television series '
+          'created by David Benioff and D. B. Weiss for HBO',
+    ),
+    Movie(
+      imageName: AppImages.gameOfThrones.assetName,
+      title: 'Titanic',
+      time: 'April 18, 2011',
+      description:
+          'Game of Thrones is an American fantasy drama television series '
+          'created by David Benioff and D. B. Weiss for HBO',
+    ),
+    Movie(
+      imageName: AppImages.gameOfThrones.assetName,
+      title: 'Shrek',
       time: 'April 18, 2011',
       description:
           'Game of Thrones is an American fantasy drama television series '
